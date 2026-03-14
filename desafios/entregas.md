@@ -7,3 +7,7 @@
 
 # SUGESTÃO - Desafios para Smart City 
 - https://docs.google.com/document/d/1C0nNNBLqCDSXJoIcvWlhaoC26HUpmbETfKGtKsIpeJs/edit?usp=sharing
+
+# Lógica Avançada com App-Flask
+- Aula Teoria e Prática | Framework Flask
+- https://github.com/clovesrocha/MiniCursoIP/tree/master/app-Flask
