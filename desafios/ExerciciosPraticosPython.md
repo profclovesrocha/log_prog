@@ -1,4 +1,4 @@
-# Exercícios Práticos Python
+# Exercícios Práticos Python (A Resolução Completa com Entrega Vale 1,0 na AV2)
 - Este repositório tem como objetivo reunir alguns exercícios para os interessados em estudar e reforçar seus conhecimentos na linguagem Python.
 - Todos os exercícios contam com um enunciado e com uma solução proposta, porém cada pessoa pode implementar a solução da maneira que achar mais interessante.
 - Os exercícios foram divididos em dois níveis: básico e avançado. Mesmo que o seu nível de conhecimento na linguagem seja bem raso, ainda assim você encontrará desafios que seja capaz de concluir.
@@ -25,5 +25,38 @@ Considere o seguinte dicionário: {'m1': {'m2': 'Olá Mundo'}}. Carregue e apres
 Desenvolva um programa que tenha uma função que verifique se um número inteiro qualquer é par ou impar.
 
 # Listas
-1. Desenvolva um programa que armazene quatro notas em uma lista e que apresente: a média final, a maior nota e a menor nota
+1. Desenvolva um programa que armazene quatro notas em uma lista e que apresente: a média final, a maior nota e a menor nota.
 2. Desenvolva um programa que armazene quatro notas em uma lista e que apresente a média final. Caso a média seja igual ou superior a 7, apresentar a mensagem "APROVADO", caso contrário, armazenar a nota da prova final e recalcular a média. Caso a nova média seja igual superior a 5, apresentar a mensagem "APROVADO", caso contrário, apresentar a mensagem "REPROVADO".
+
+# Mensagens
+1. Desenvolva um programa que apresente na tela a seguinte mensagem: Hello World
+2. Desenvolva um programa que pergunte o seu nome e, ao teclar Enter, apresente uma saudação personalizada
+
+# Números
+1. Desenvolva um programa que leia um número inteiro qualquer e que apresete o número informado, seguido do seu antecessor e do seu sucessor.
+2. Desenvolva um programa que leia um número inteiro qualquer e que apresente o número informado com duas casas decimais.
+3. Desenvolva um programa que leia quatro notas e que apresente a média final.
+4. Desenvolva um programa que leia um número inteiro qualquer e que informe se este número é par ou impar.
+
+
+# Strings
+- Desenvolva um programa que altere em tempo de execução a palavra Java pela palavra Python na frase Exercícios de Java
+
+
+# Avançado
+1. Desenvolva um programa que leia o seu nome completo e que apresente somente o seu primeiro e último nomes.
+2. Desenvolva um programa que leia um número qualquer e informe se ele é par ou ímpar.
+3. Desenvolva uma calculadora rudimentar onde o usuário deve informar: qual operação ele deseja realizar, quais os valores para a realização do cálculo (apenas dois valores) e o resultado da operação
+
+# Map
+1. Desenvolva um programa que converta todas as temperaturas desta lista em Celsius ([22.5, 40, 13, 29, 34]) para Fahrenheit
+2. Desenvolva um programa que apresente a soma dos valores pares e dos valores ímpares da sequência ([21, 5, 34, 8, 16, 7, 3])
+3. Desenvolva um programa que apresente o maior e o menor valores da sequência ([54, 10, 29, 87, 7, 64])
+
+# Projetos
+- Jogos
+1. Desenvolva um jogo de acerte o número, onde o computador escolhe um número inteiro aleatório de 0 a 10, e o usuário tem 5 tentativas para adivinhar o número
+- OBS.: O design da tela pode ser implementado livremente
+(PLUS): Implemente um sistema de pontuação com o seguinte comportamento: se o usuário adivinhar o número na primeira tentativa, receberá a pontuação máxima (ex. 100 pontos); se o usuário adivinhar o número na última tentativa, receberá a pontuação mínima (ex. 10 pontos); se o usuário não acertar o número, não receberá nenhum ponto.
+(PLUS): Implemente um controle de erros. Caso o jogador digite um número fora da faixa permitida ou caracteres não numéricos, o sistema deve notificar o jogador e solicitar o input correto.
+(PLUS): Implemente a opção de o usuário iniciar uma nova partida. Ao finalizar uma rodada, após o resultado final, o jogo deve perguntar se o jogador quer iniciar uma nova partida e, em caso negativo, encerrar a aplicação.
