@@ -1,0 +1,56 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "background_save": true,
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "D9L1_Ve1YeUs",
+        "outputId": "ffab07a8-0b87-42ff-a665-68c706d0100c"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Entrada inválida! Por favor, digite apenas letras.\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 13 - Professor Cloves\n",
+        "# Prática no lab. 2 - 18/Maio/2026\n",
+        "\n",
+        "while True:\n",
+        "    c = input(\"Olá estudante, seja bem-vindo! Informe seu Nome: \")\n",
+        "\n",
+        "\n",
+        "    if c.replace(\" \", \"\").isalpha():\n",
+        "        break # Sai do loop se a condição for verdadeira\n",
+        "    else:\n",
+        "        print(\"Entrada inválida! Por favor, digite apenas letras.\\n\")\n",
+        "\n",
+        "print(type(c))\n",
+        "print(f\"Nome salvo com sucesso: {c}\")\n"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
