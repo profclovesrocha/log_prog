@@ -1,0 +1,91 @@
+import java.util.Scanner;
+
+public class Calculadora {
+    public static double calculadora(double a, double b, int opcao) {
+
+        double resultado = 0;
+
+        switch (opcao) {
+
+            case 1:
+                resultado = a + b;
+                break;
+
+            case 2:
+                resultado = a - b;
+                break;
+
+            case 3:
+                resultado = a * b;
+                break;
+
+            case 4:
+                if (b == 0) {
+                    System.out.println("ERRO: não pode dividir por 0");
+                } else {
+                    resultado = a / b;
+                }
+                break;
+
+            default:
+                System.out.println("Opção inválida");
+        }
+
+        return resultado;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int opcaoMenu = 0;
+
+        System.out.println("Digite o primeiro número");
+        int calculo1 = sc.nextInt();
+
+        System.out.println("Digite o segundo numero");
+        int calculo2 = sc.nextInt();
+
+        while (opcaoMenu != 5) {
+
+            System.out.println("\n======MENU======");
+            System.out.println("1 - SOMA");
+            System.out.println("2 - SUBTRAÇÃO");
+            System.out.println("3 - MULTIPLICAÇÃO");
+            System.out.println("4 - DIVISÃO");
+            System.out.println("5 - SAIR");
+
+            if(!sc.hasNextInt()) {
+                System.out.println("ERRO: não é permitido letras, apenas números");
+
+                sc.nextLine();
+                continue;
+            }
+
+            opcaoMenu = sc.nextInt();
+
+            if (opcaoMenu >= 1 && opcaoMenu <= 4) {
+
+                if(opcaoMenu == 4 && calculo2 == 0) {
+                    System.out.println();
+                } else {
+                    double resultado = calculadora(calculo1, calculo2, opcaoMenu);
+                    System.out.println("RESULTADO: " + resultado);
+                }
+            }
+
+            if (opcaoMenu == 5) {
+                System.out.println("Saindo...");
+
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                System.out.println("Programa fechado com sucesso");
+            }
+        }
+        sc.close();
+    }
+}
