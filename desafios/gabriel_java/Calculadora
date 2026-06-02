@@ -41,10 +41,10 @@ public class Calculadora {
         int opcaoMenu = 0;
 
         System.out.println("Digite o primeiro número");
-        int calculo1 = sc.nextInt();
+        double calculo1 = sc.nextDouble();
 
         System.out.println("Digite o segundo numero");
-        int calculo2 = sc.nextInt();
+        double calculo2 = sc.nextDouble();
 
         while (opcaoMenu != 5) {
 
@@ -54,6 +54,7 @@ public class Calculadora {
             System.out.println("3 - MULTIPLICAÇÃO");
             System.out.println("4 - DIVISÃO");
             System.out.println("5 - SAIR");
+            System.out.println("0 - ALTERAR OS VALORES");
 
             if(!sc.hasNextInt()) {
                 System.out.println("ERRO: não é permitido letras, apenas números");
@@ -64,14 +65,20 @@ public class Calculadora {
 
             opcaoMenu = sc.nextInt();
 
+            if (opcaoMenu == 0) {
+                System.out.println("Digite o primeiro número");
+                calculo1 = sc.nextDouble();
+                System.out.println("Digite o segundo número");
+                calculo2 = sc.nextDouble();
+
+                continue;
+            }
+
             if (opcaoMenu >= 1 && opcaoMenu <= 4) {
 
-                if(opcaoMenu == 4 && calculo2 == 0) {
-                    System.out.println();
-                } else {
-                    double resultado = calculadora(calculo1, calculo2, opcaoMenu);
-                    System.out.println("RESULTADO: " + resultado);
-                }
+                double resultado = calculadora(calculo1, calculo2, opcaoMenu);
+
+                System.out.println("Resultado: " + resultado);
             }
 
             if (opcaoMenu == 5) {
