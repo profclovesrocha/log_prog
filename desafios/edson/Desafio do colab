@@ -1,0 +1,40 @@
+Edson Rodigues Cardoso Dos Santos
+Matricula:01351404
+Turma ADS
+
+
+# Lista para guardar as notas
+notas = []
+
+# Pedindo as 4 notas
+for i in range(4):
+    nota = float(input("Digite uma nota: "))
+    notas.append(nota)
+
+# Calculando a média
+media = sum(notas) / 4
+
+# Mostrando resultados
+print("Notas digitadas:", notas)
+print("Média final:", media)
+
+# Maior e menor nota
+print("Maior nota:", max(notas))
+print("Menor nota:", min(notas))
+
+# Verificando situação do aluno
+if media >= 7:
+    print("APROVADO")
+else:
+    print("Aluno ficou na prova final")
+
+    prova_final = float(input("Digite a nota da prova final: "))
+
+    nova_media = (media + prova_final) / 2
+
+    print("Nova média:", nova_media)
+
+    if nova_media >= 5:
+        print("APROVADO")
+    else:
+        print("REPROVADO")
